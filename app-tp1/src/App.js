@@ -8,7 +8,11 @@ function App() {
 
   return <>
     <Header></Header>
+    <h2>Toutes les tâches</h2>
     {tasks.map(user => <Cards key={user.id} {...user}></Cards>)}
+    <br></br>
+    <h2>Tâches finies</h2>
+    {tasks.filter(user => user.fini === "Oui").map(user => <Cards key={user.id} {...user}></Cards>)}
     <Footer></Footer>
   </>
 

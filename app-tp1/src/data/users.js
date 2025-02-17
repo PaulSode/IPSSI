@@ -7,8 +7,8 @@ export const users = [
 ];
 
 export const tasks = [
-    {id:1, nom:"Vivre", fini:"False"},
+    {id:1, nom:"Vivre", fini:"Non"},
     {id:2, nom:"Faire la vaisselle", fini:"Jamais"},
     {id:3, nom:"Manger un pamplemousse", fini:"Pourquoi ?"},
-    {id:4, nom:"Trouver Charlie", fini:"True"}
+    {id:4, nom:"Trouver Charlie", fini:"Oui"}
 ];
