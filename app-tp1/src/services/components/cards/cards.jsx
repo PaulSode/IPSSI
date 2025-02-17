@@ -1,10 +1,10 @@
 ﻿import style from "./cards.module.css"
 
-const Cards = ({prenom, nom}) => {
+const Cards = ({nom, fini}) => {
         return <>
-            <h1 className={style.titre}>Coucou</h1>
-            <p className={style.paragraphe}>C'est moi {prenom} {nom}</p>
-            <p className={style.paragraphe}>Non en vrai c'est pas moi désolé</p>
+            <h1 className={style.titre}>{nom}</h1>
+            <p className={style.paragraphe}>Statut : {fini}</p>
+            <p>-------------</p>
         </>
     };
 export default Cards;

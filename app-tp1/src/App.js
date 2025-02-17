@@ -1,20 +1,14 @@
 import './App.css';
 import Cards from "./services/components/cards/cards";
-import Header from "./services/components/header";
-import Footer from "./services/components/footer";
+import Header from "./services/components/Header/header";
+import Footer from "./services/components/Footer/footer";
+import {tasks} from "./data/users";
 
 function App() {
 
-  const users = [
-    {id:1, nom:"Macron", prenom:"Emmanuel"},
-    {id:2, nom:"WARIO", prenom:"WALUIGI"},
-    {id:3, nom:"999", prenom:"SCP"},
-    {id:4, nom:"Le Lion", prenom:"Alex"}
-  ];
-
   return <>
     <Header></Header>
-    {users.map(user => <Cards key={user.id} {...user}></Cards>)}
+    {tasks.map(user => <Cards key={user.id} {...user}></Cards>)}
     <Footer></Footer>
   </>
 
