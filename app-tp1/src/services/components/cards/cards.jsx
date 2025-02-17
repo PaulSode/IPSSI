@@ -7,4 +7,12 @@ const Cards = ({nom, fini}) => {
             <p>-------------</p>
         </>
     };
-export default Cards;
+
+const PostCards = ({title, body}) => {
+    return <>
+        <h1>{title}</h1>
+        <p className={style.paragraphe}>{body}</p>
+        <p>-------------</p>
+    </>
+};
+export {Cards, PostCards};
