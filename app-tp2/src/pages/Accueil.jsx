@@ -17,6 +17,7 @@ const Accueil = () => {
 
     return <>
     <h1>Monstres</h1>
+
         {posts.map(post => <PostCards key={post .id} {...post}></PostCards>)}
     </>
 };
