@@ -4,7 +4,7 @@ function Header(){
     return <header className={style.header}>
         <div className={style.headerContainer}>
             <div className={style.logo}>
-                <a href="/">Mon Magnifique Site</a>
+                <a href="/app-tp1/public">Mon Magnifique Site</a>
             </div>
             <nav>
                 <ul className={style.navList}>
